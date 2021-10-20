@@ -9,6 +9,7 @@ const { consumer } = urls[env];
 module.exports = {
   ...webpack,
   output: {
+    ...webpack.output,
     publicPath: consumer.url,
   },
   devServer: {

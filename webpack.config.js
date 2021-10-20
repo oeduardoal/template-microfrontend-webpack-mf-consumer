@@ -11,6 +11,7 @@ module.exports = {
   ...webpack,
   output: {
     publicPath: "auto",
+    chunkFilename: "[id].[contenthash].js",
   },
   plugins: [
     ...webpack.plugins,
