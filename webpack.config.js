@@ -4,7 +4,7 @@ const deps = require("./package.json").dependencies;
 
 const env = process.env.ENV || "dev";
 
-const { account } = urls[env];
+const { account, header } = urls[env];
 
 /** @type { import('webpack').Configuration } */
 module.exports = {
@@ -19,6 +19,7 @@ module.exports = {
       filename: "remoteEntry.js",
       remotes: {
         account: `account@${account.url}remoteEntry.js`,
+        header: `header@${header.url}remoteEntry.js`,
       },
       shared: deps,
     }),
