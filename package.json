@@ -6,13 +6,14 @@
   "author": "Eduardo Almeida <me@oeduardoal.dev>",
   "license": "MIT",
   "scripts": {
-    "dev": "webpack serve",
+    "dev": "webpack serve --config webpack.config.dev.js",
     "build": "webpack --mode production",
     "prestart": "yarn build",
     "start": "serve dist"
   },
   "dependencies": {
-    "@oeduardoal/microfrontend-config": "1.x.x",
+    "@grupoboticario/flora-react": "^0.6.28",
+    "@oeduardoal/microfrontend-config": "^1.x.x",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
   }

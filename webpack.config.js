@@ -1,5 +1,6 @@
 const ModuleFederationPlugin = require("webpack/lib/container/ModuleFederationPlugin");
 const { webpack, urls } = require("@oeduardoal/microfrontend-config");
+const deps = require("./package.json").dependencies;
 
 const env = process.env.ENV || "dev";
 
@@ -19,7 +20,7 @@ module.exports = {
       remotes: {
         account: `account@${account.url}remoteEntry.js`,
       },
-      shared: { react: { singleton: true }, "react-dom": { singleton: true } },
+      shared: deps,
     }),
   ],
 };
