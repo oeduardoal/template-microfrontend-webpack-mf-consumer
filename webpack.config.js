@@ -3,10 +3,7 @@ const { webpack, urls } = require("@oeduardoal/microfrontend-config");
 
 const env = process.env.ENV || "dev";
 
-const {
-  consumer: { url: publicPath, port },
-  account,
-} = urls[env];
+const { account } = urls[env];
 
 /** @type { import('webpack').Configuration } */
 module.exports = {
