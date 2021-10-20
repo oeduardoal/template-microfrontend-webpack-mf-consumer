@@ -12,10 +12,7 @@ const {
 module.exports = {
   ...webpack,
   output: {
-    publicPath,
-  },
-  devServer: {
-    port,
+    publicPath: "auto",
   },
   plugins: [
     ...webpack.plugins,
