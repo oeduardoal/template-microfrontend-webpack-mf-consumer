@@ -1,7 +1,14 @@
 import React from "react";
 
+// @ts-ignore
+import Account from "account/main";
+
 const App: React.FC = () => {
-  return <h1>Page</h1>;
+  return (
+    <>
+      Consumer <Account />
+    </>
+  );
 };
 
 export default App;
