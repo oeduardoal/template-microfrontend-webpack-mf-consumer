@@ -5,6 +5,8 @@ import { Button } from "@grupoboticario/flora-react-button";
 
 // @ts-ignore
 import Account from "account/main";
+// @ts-ignore
+import Header from "header/main";
 
 const App: React.FC = () => {
   return (
@@ -12,7 +14,9 @@ const App: React.FC = () => {
       <Heading level={4}>Header Consumer</Heading>
       <Button>Consumer Button</Button>
       {/* MF Account */}
-      <Account name="Eduardo Almeida" />
+      <Header>
+        <Account name="Eduardo Almeida" />
+      </Header>
     </Container>
   );
 };
