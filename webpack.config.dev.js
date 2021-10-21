@@ -14,5 +14,6 @@ module.exports = {
   },
   devServer: {
     port: consumer.port,
+    historyApiFallback: true,
   },
 };
