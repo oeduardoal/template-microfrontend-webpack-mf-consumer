@@ -1169,7 +1169,7 @@
   resolved "https://npm.pkg.github.com/download/@grupoboticario/flora-react-utils/0.1.9/1765aa1b6285fd3281925f31c44e52adc444ed3607a55abc7df8d60e160e6bac#e209244704fce93ca3850adf28e9f827ebdb1039"
   integrity sha512-nud4Ogb8zACiUQFvvftQTfVWjkJdBZOUIgW5D9mbi5AB6gMijmHbnnUQq8VguApNCkYZ1g3RoG1YXaa75O6iSw==
 
-"@grupoboticario/flora-react@^0.6.28":
+"@grupoboticario/flora-react@0.6.28":
   version "0.6.28"
   resolved "https://npm.pkg.github.com/download/@grupoboticario/flora-react/0.6.28/dad7cbb82ae36b82c131a8a4f7e64c5eb64683b9f1dc9cd7938d5421dbd72901#edad53ce749dde763f3e629c33f776c719dbcb4f"
   integrity sha512-/lET8W3AyK2QT7grD4iLqeQkE1e30rVus51IF6WjypFFGNVeZ48tKNgTN+bk1ASzyC36ihES1J1PAwzDMJrvjA==
@@ -1248,7 +1248,7 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
-"@oeduardoal/microfrontend-config@^1.0.5":
+"@oeduardoal/microfrontend-config@1.0.5":
   version "1.0.5"
   resolved "https://npm.pkg.github.com/download/@oeduardoal/microfrontend-config/1.0.5/7cc8f06fc6d8463da5ea1488ad4c187d88edca8079d7f309b81861d46f7ed359#dc556abbcb32ddb0e5fb689ef3032b7cf523419c"
   integrity sha512-D6U0bc0+s24963Ih82xaiQWP6z02VZBENgp/i1h3lfJ6qw/qadWZBwABIQQ9e1g8AnEkQ3kk2pX7uDRcqnRs5w==

@@ -1,7 +1,6 @@
 import React from "react";
 import { globalCss, boticarioTheme } from "@grupoboticario/flora";
-import { FloraProvider } from "@grupoboticario/flora-react-flora-provider";
-import { Box } from "@grupoboticario/flora-react-box";
+import { Box, FloraProvider } from "@grupoboticario/flora-react";
 import { styled } from "@grupoboticario/flora";
 
 import { BrowserRouter as Router, Link } from "react-router-dom";
