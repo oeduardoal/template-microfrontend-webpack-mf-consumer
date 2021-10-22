@@ -1,16 +1,17 @@
-import React, { lazy, Suspense } from "react";
+import React from "react";
 import { Switch, Route } from "react-router-dom";
 
-// @ts-ignore
-const AccountRoute = lazy(() => import("account/Account"));
+import HomeRoute from "./home-route";
+import SomeRoute from "./some-route";
 
 const Routes = () => {
   return (
     <Switch>
-      <Route path="/account">
-        <Suspense fallback={null}>
-          <AccountRoute />
-        </Suspense>
+      <Route path="/home">
+        <HomeRoute />
+      </Route>
+      <Route path="/some-route">
+        <SomeRoute />
       </Route>
     </Switch>
   );

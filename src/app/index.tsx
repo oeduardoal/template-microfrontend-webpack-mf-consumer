@@ -1,20 +1,18 @@
 import React from "react";
-import { globalCss, boticarioTheme } from "@grupoboticario/flora";
-import { Box, FloraProvider } from "@grupoboticario/flora-react";
-import { styled } from "@grupoboticario/flora";
-
-import Logo from "../assets/icon.png";
-
 import { BrowserRouter as Router, Link } from "react-router-dom";
+import Routes from "./routes";
+import { styled, globalCss } from "../../stitches.config";
+import { Box } from "../components/Box";
+
 const LLink = styled(Link, Box, {
   color: "white",
   fontWeight: "bold",
-  fontSize: "$xl",
+  fontSize: "$6",
+  textDecoration: "none",
+  "&:hover": {
+    color: "$orange6",
+  },
 });
-
-// @ts-ignore
-import Header from "header/Header";
-import Routes from "./routes";
 
 const styles = globalCss({
   "html, body, #root": {
@@ -26,43 +24,30 @@ const styles = globalCss({
 const App: React.FC = () => {
   styles();
   return (
-    <div className={boticarioTheme}>
-      <FloraProvider>
-        <Router>
-          <Header>
-            <Box
-              as="nav"
-              css={{ display: "flex", alignItems: "center", gap: "$6" }}
-            >
-              <img src={Logo} alt="Boticário" />
-
-              <LLink to="/account?name=Eduardo Almeida">
-                <Box
-                  css={{
-                    display: "flex",
-                    cursor: "pointer",
-                    width: 50,
-                    height: 50,
-                    borderRadius: "$pill",
-                    backgroundColor: "$brand-2",
-                    justifyContent: "center",
-                    alignItems: "center",
-                    fontWeight: "$strong",
-                    fontSize: "$xlg",
-                    "&:hover": {
-                      border: "solid 2px white",
-                    },
-                  }}
-                >
-                  EA
-                </Box>
-              </LLink>
-            </Box>
-          </Header>
-          <Routes />
-        </Router>
-      </FloraProvider>
-    </div>
+    <Router>
+      <Box
+        as="header"
+        css={{
+          backgroundColor: "$background",
+          height: 80,
+          color: "white",
+          display: "flex",
+          alignItems: "center",
+          padding: "0 10rem",
+        }}
+      >
+        <Box
+          as="nav"
+          css={{ display: "flex", alignItems: "center", gap: "$6" }}
+        >
+          <LLink to="/home">Home</LLink>
+          <LLink to="/some-route">Some Route</LLink>
+        </Box>
+      </Box>
+      <Box css={{ padding: "5rem 10rem" }}>
+        <Routes />
+      </Box>
+    </Router>
   );
 };
 

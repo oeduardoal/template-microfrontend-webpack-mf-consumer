@@ -9,7 +9,7 @@ const { consumer } = urls[env];
 module.exports = merge.merge(webpack, {
   devtool: false,
   output: {
-    publicPath: consumer.url,
+    publicPath: "auto",
     filename: "[name].[chunkhash:8].js",
     chunkFilename: "[name].[chunkhash:8].js",
     assetModuleFilename: "assets/[hash][ext][query]",
