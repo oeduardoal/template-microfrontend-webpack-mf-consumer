@@ -7,15 +7,18 @@
   "license": "MIT",
   "scripts": {
     "dev": "webpack serve --config webpack.config.dev.js",
-    "build": "webpack --mode production",
+    "build": "webpack --mode production --config webpack.config.prod.js",
     "prestart": "yarn build",
     "start": "serve dist"
   },
   "dependencies": {
     "@grupoboticario/flora-react": "0.6.28",
-    "@oeduardoal/microfrontend-config": "1.0.5",
+    "@oeduardoal/microfrontend-config": "^1.0.x",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-router-dom": "^5.3.0"
+  },
+  "devDependencies": {
+    "@types/react-router-dom": "^5.3.1"
   }
 }

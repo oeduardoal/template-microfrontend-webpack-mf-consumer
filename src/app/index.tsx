@@ -3,6 +3,8 @@ import { globalCss, boticarioTheme } from "@grupoboticario/flora";
 import { Box, FloraProvider } from "@grupoboticario/flora-react";
 import { styled } from "@grupoboticario/flora";
 
+import Logo from "../assets/icon.png";
+
 import { BrowserRouter as Router, Link } from "react-router-dom";
 const LLink = styled(Link, Box, {
   color: "white",
@@ -32,6 +34,8 @@ const App: React.FC = () => {
               as="nav"
               css={{ display: "flex", alignItems: "center", gap: "$6" }}
             >
+              <img src={Logo} alt="Boticário" />
+
               <LLink to="/account?name=Eduardo Almeida">
                 <Box
                   css={{
