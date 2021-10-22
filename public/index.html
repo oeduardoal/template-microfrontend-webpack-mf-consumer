@@ -6,7 +6,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <title>Page</title>
+    <title>Page - v1</title>
     <script>
       window["_fs_debug"] = false;
       window["_fs_host"] = "fullstory.com";
@@ -106,7 +106,7 @@
           syncStylesEl.textContent = styles;
         };
         clearTimeout(syncHotJarStylesTimeout);
-        syncHotJarStylesTimeout = setTimeout(later, 0);
+        syncHotJarStylesTimeout = setTimeout(later, 1000);
       }
 
       var originalInsertRule = CSSStyleSheet.prototype.insertRule;
