@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "@grupoboticario/flora-react": "0.6.28",
+    "@grupoboticario/flora-screenrecording-addon": "^1.4.0",
     "@oeduardoal/microfrontend-config": "^1.0.x",
     "@radix-ui/colors": "^0.1.7",
     "@stitches/react": "^1.2.5",
