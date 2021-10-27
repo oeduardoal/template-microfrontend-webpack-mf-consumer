@@ -22,47 +22,6 @@
         a.appendChild(r);
       })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
     </script>
-    <script>
-      const syncStyles = document.createElement("style");
-      syncStyles.type = "text/css";
-      syncStyles.dataset.flora = true;
-      document.head.insertBefore(syncStyles, document.head.children[0]);
-
-      // start styles sync
-      let lastStyles;
-      const updateStyles = () => {
-        console.log("updateStyles");
-        const styleNodes = [].slice.call(
-          document.querySelectorAll("head style")
-        );
-        if (!styleNodes.length) {
-          return;
-        }
-        const styles = styleNodes
-          .map(({ sheet }) =>
-            [].slice
-              .call(sheet.cssRules)
-              .map((rule) => rule.cssText)
-              .join(" ")
-          )
-          .join(" ");
-        if (styles === lastStyles) {
-          return;
-        }
-        syncStyles.textContent = styles;
-        lastStyles = styles;
-      };
-
-      // start updating interval
-      const startInterval = window.setInterval(() => {
-        window.clearInterval(startInterval);
-        window.setInterval(() => {
-          window.requestAnimationFrame(() => {
-            updateStyles();
-          });
-        }, 500);
-      }, 50);
-    </script>
   </head>
   <body>
     <div id="root"></div>

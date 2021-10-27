@@ -1204,10 +1204,10 @@
     "@grupoboticario/flora-react-tooltip" "0.1.13"
     "@grupoboticario/flora-react-utils" "0.1.9"
 
-"@grupoboticario/flora-screenrecording-addon@^1.4.0":
-  version "1.4.0"
-  resolved "https://npm.pkg.github.com/download/@grupoboticario/flora-screenrecording-addon/1.4.0/c0aa25bc87f8aab210faf7612c60f0e3c7e20117373d15080ec8bf2ca23b6a4f#c2b75e29ac561dc9107723152924cd4f171aaa56"
-  integrity sha512-dPjqgUchzGvKXmwCQcGOxGukgnxAJvJmOYwTQ1iT6BMUZarQ+OBZHuoR6LzsLC9py2VqYhizo066/CrmrPTmoQ==
+"@grupoboticario/flora-screenrecording-addon@^2.1.1":
+  version "2.1.1"
+  resolved "https://npm.pkg.github.com/download/@grupoboticario/flora-screenrecording-addon/2.1.1/80b68898e5ac0a5e2aadb24f1e8237605d5f10e22b526cb92e204480a830f434#422f871163639d9a94b860e446eafb8a3e409a7b"
+  integrity sha512-xzRG0qrhp2CafjDIzQLQJZBtxARlmr2Muja4SEJmyCtSLTUu8t0i7FijSzXBkJuI/e4a3B0qQCJaNsV+ta28aw==
 
 "@grupoboticario/flora-tokens@^0.3.20":
   version "0.3.20"

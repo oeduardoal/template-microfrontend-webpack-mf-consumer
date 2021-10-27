@@ -3,6 +3,7 @@ import type * as Stitches from "@stitches/react";
 import * as colors from "@radix-ui/colors";
 
 export const { css, config, getCssText, globalCss, styled } = createStitches({
+  prefix: "flora",
   theme: {
     fonts: {
       system: "system-ui",
