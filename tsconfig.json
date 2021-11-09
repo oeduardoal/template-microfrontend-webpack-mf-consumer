@@ -18,6 +18,10 @@
     "strictPropertyInitialization": true,
     "stripInternal": true,
     "target": "ESNext",
+    "baseUrl": "./",
+    "paths": {
+      ".": ["./"]
+    },
     "typeRoots": ["./node_modules/@types", "./types.d.ts"]
   }
 }

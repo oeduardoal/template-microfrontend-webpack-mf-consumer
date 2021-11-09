@@ -1,20 +1,15 @@
 import React from "react";
-import { globalCss, boticarioTheme } from "@grupoboticario/flora";
+import { globalCss, foundationTheme } from "@grupoboticario/flora";
 import { Box, FloraProvider } from "@grupoboticario/flora-react";
-import { styled } from "@grupoboticario/flora";
 
-import Logo from "../assets/icon.png";
-
-import { BrowserRouter as Router, Link } from "react-router-dom";
-const LLink = styled(Link, Box, {
-  color: "white",
-  fontWeight: "bold",
-  fontSize: "$xl",
-});
+import { BrowserRouter as Router } from "react-router-dom";
 
 // @ts-ignore
 import Header from "header/Header";
+
 import Routes from "./routes";
+import { Link } from "./components/Link";
+import { Avatar } from "./components/Avatar";
 
 const styles = globalCss({
   "html, body, #root": {
@@ -26,43 +21,28 @@ const styles = globalCss({
 const App: React.FC = () => {
   styles();
   return (
-    <div className={boticarioTheme}>
-      <FloraProvider>
-        <Router>
-          <Header>
-            <Box
-              as="nav"
-              css={{ display: "flex", alignItems: "center", gap: "$6" }}
-            >
-              <img src={Logo} alt="Boticário" />
-
-              <LLink to="/account?name=Eduardo Almeida">
-                <Box
-                  css={{
-                    display: "flex",
-                    cursor: "pointer",
-                    width: 50,
-                    height: 50,
-                    borderRadius: "$pill",
-                    backgroundColor: "$brand-2",
-                    justifyContent: "center",
-                    alignItems: "center",
-                    fontWeight: "$strong",
-                    fontSize: "$xlg",
-                    "&:hover": {
-                      border: "solid 2px white",
-                    },
-                  }}
-                >
-                  EA
-                </Box>
-              </LLink>
-            </Box>
-          </Header>
-          <Routes />
-        </Router>
-      </FloraProvider>
-    </div>
+    <FloraProvider theme={foundationTheme}>
+      <Router>
+        <Header>
+          <Box
+            as="nav"
+            css={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "space-between",
+              gap: "$6",
+              flex: 1,
+            }}
+          >
+            <Link to="/">Go to Home</Link>
+            <Link to="/account?name=Eduardo Almeida">
+              <Avatar text="EA" />
+            </Link>
+          </Box>
+        </Header>
+        <Routes />
+      </Router>
+    </FloraProvider>
   );
 };
 
