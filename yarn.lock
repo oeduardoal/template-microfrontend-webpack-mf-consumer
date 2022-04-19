@@ -1247,18 +1247,18 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
-"@oeduardoal/microfrontend-config@^1.0.x":
-  version "1.0.6"
-  resolved "https://npm.pkg.github.com/download/@oeduardoal/microfrontend-config/1.0.6/977048e5ce5a5c33d170d70e980a4cf6c24f19db26f5e50035248952f3e05531#df7694f8ef190c4bf16892e450ee1c5410973b56"
-  integrity sha512-6XUlRB6uJh0O+rqiSLB83Vfigm/Zl22TaenBshuyCQMqtwvHHNalhXZPl6wJD18cwPmw9of660xXFZHAeF9ImQ==
+"@oeduardoal/microfrontend-config@1.1.3":
+  version "1.1.3"
+  resolved "https://npm.pkg.github.com/download/@oeduardoal/microfrontend-config/1.1.3/6a42ff91bce776c9cb0f4ff5c64682ec560d7dc499a67e9c7d1a99f5913f41e8#37693318a8f558d69bbdab981a4d664ce7d3ab02"
+  integrity sha512-Y0wD+Eb2+isl5fDYKXUG9lUDkulich41C0sr3RuOHTq2RaN8nPciyrlVtYdO07oPxk2OhJv7yP+UNSvRacDYqg==
   dependencies:
     "@babel/cli" "^7.15.7"
     "@babel/core" "^7.15.8"
     "@babel/preset-env" "^7.15.8"
     "@babel/preset-react" "^7.14.5"
     "@babel/preset-typescript" "^7.15.0"
-    "@types/react" "^17.0.30"
-    "@types/react-dom" "^17.0.9"
+    "@types/react" "^18.0.5"
+    "@types/react-dom" "^18.0.1"
     "@types/webpack" "^5.28.0"
     babel-loader "^8.2.2"
     css-loader "^6.4.0"
@@ -1953,10 +1953,10 @@
   resolved "https://registry.yarnpkg.com/@types/prop-types/-/prop-types-15.7.4.tgz#fcf7205c25dff795ee79af1e30da2c9790808f11"
   integrity sha512-rZ5drC/jWjrArrS8BR6SIr4cWpW09RNTYt9AMZo3Jwwif+iacXAqgVjm0B0Bv/S1jhDXKHqRVNCbACkJ89RAnQ==
 
-"@types/react-dom@^17.0.9":
-  version "17.0.9"
-  resolved "https://registry.yarnpkg.com/@types/react-dom/-/react-dom-17.0.9.tgz#441a981da9d7be117042e1a6fd3dac4b30f55add"
-  integrity sha512-wIvGxLfgpVDSAMH5utdL9Ngm5Owu0VsGmldro3ORLXV8CShrL8awVj06NuEXFQ5xyaYfdca7Sgbk/50Ri1GdPg==
+"@types/react-dom@^18.0.1":
+  version "18.0.1"
+  resolved "https://registry.yarnpkg.com/@types/react-dom/-/react-dom-18.0.1.tgz#cb3cc10ea91141b12c71001fede1017acfbce4db"
+  integrity sha512-jCwTXvHtRLiyVvKm9aEdHXs8rflVOGd5Sl913JZrPshfXjn8NYsTNZOz70bCsA31IR0TOqwi3ad+X4tSCBoMTw==
   dependencies:
     "@types/react" "*"
 
@@ -1977,10 +1977,19 @@
     "@types/history" "*"
     "@types/react" "*"
 
-"@types/react@*", "@types/react@^17.0.30":
+"@types/react@*":
   version "17.0.30"
   resolved "https://registry.yarnpkg.com/@types/react/-/react-17.0.30.tgz#2f8e6f5ab6415c091cc5e571942ee9064b17609e"
   integrity sha512-3Dt/A8gd3TCXi2aRe84y7cK1K8G+N9CZRDG8kDGguOKa0kf/ZkSwTmVIDPsm/KbQOVMaDJXwhBtuOXxqwdpWVg==
+  dependencies:
+    "@types/prop-types" "*"
+    "@types/scheduler" "*"
+    csstype "^3.0.2"
+
+"@types/react@^18.0.5":
+  version "18.0.5"
+  resolved "https://registry.yarnpkg.com/@types/react/-/react-18.0.5.tgz#1a4d4b705ae6af5aed369dec22800b20f89f5301"
+  integrity sha512-UPxNGInDCIKlfqBrm8LDXYWNfLHwIdisWcsH5GpMyGjhEDLFgTtlRBaoWuCua9HcyuE0rMkmAeZ3FXV1pYLIYQ==
   dependencies:
     "@types/prop-types" "*"
     "@types/scheduler" "*"

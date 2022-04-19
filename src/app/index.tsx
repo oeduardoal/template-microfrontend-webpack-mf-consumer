@@ -4,7 +4,6 @@ import { Box, FloraProvider } from "@grupoboticario/flora-react";
 
 import { BrowserRouter as Router } from "react-router-dom";
 
-// @ts-ignore
 import Header from "header/Header";
 
 import Routes from "./routes";

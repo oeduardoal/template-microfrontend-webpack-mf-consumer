@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "@grupoboticario/flora-react": "0.7.6",
-    "@oeduardoal/microfrontend-config": "^1.0.x",
+    "@oeduardoal/microfrontend-config": "1.1.3",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-router-dom": "^5.3.0"

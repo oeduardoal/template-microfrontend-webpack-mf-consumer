@@ -1,27 +1,20 @@
 {
-  "include": ["./src"],
   "compilerOptions": {
-    "allowSyntheticDefaultImports": true,
-    "esModuleInterop": true,
-    "jsx": "react",
-    "lib": ["dom", "esnext"],
-    "moduleResolution": "node",
-    "skipLibCheck": true,
-    "noFallthroughCasesInSwitch": true,
-    "noImplicitAny": true,
-    "pretty": true,
-    "resolveJsonModule": true,
-    "sourceMap": true,
-    "strict": true,
-    "strictFunctionTypes": true,
-    "strictNullChecks": true,
-    "strictPropertyInitialization": true,
-    "stripInternal": true,
     "target": "ESNext",
-    "baseUrl": "./",
-    "paths": {
-      ".": ["./"]
-    },
-    "typeRoots": ["./node_modules/@types", "./types.d.ts"]
-  }
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true
+  },
+  "include": ["mf-config.d.ts", "**/*.ts", "**/*.tsx"],
+  "exclude": ["node_modules"]
 }
