@@ -16,6 +16,9 @@ module.exports = merge.merge(webpack, {
         account: `account@${account.url}remoteEntry.js`,
         header: `header@${header.url}remoteEntry.js`,
       },
+      exposes: {
+        "./Home": "./src/app/screens/Home.tsx",
+      },
       shared: deps,
     }),
   ],
